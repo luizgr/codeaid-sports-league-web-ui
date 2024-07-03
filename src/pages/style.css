@@ -1,0 +1,88 @@
+html, body, #root {
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0 20px 0;
+    font-family: 'Open Sans', sans-serif;
+    flex: 1 0 auto;
+}
+
+.page-header {
+    font-size: 24px;
+    color: #182C62;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.table {
+    width: 100%;
+    font-size: 14px;
+    color: #4B5C68;
+    border-color: #E4EDF2;
+}
+
+.table tr:nth-child(even) {
+    background: #F6F7F7;
+}
+
+.table th {
+    font-size: 12px;
+    height: 40px;
+    background-color: #E4EDF2;
+    padding: 0 12px;
+}
+
+.table td {
+    font-size: 14px;
+    height: 70px;
+    padding: 0 8px;
+}
+
+.table td .team-flag {
+    width: 53px;
+    height: 37px;
+}
+
+.table td.bolded {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+    .table th.no-mobile, td.no-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 751px) {
+    .table th.no-tablet, td.no-tablet {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 501px) {
+    .table th.only-landscape, td.only-landscape {
+        display: none;
+    }
+}
+
